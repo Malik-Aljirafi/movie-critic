@@ -3,67 +3,12 @@
 
 # movie-critic
 
-React project
+- Time spent: I spent approximately 10 hours in total. These hours include understanding the project, setting up environment, learning/researching React, coding and getting deliverables completed
+  
+- Explanation of work: To be completely honest, I relied heavily on AI to help me with this project. I was learning React as I worked on it since I had very little prior experience, aside from briefly using it for a small thing last year. I needed to understand the syntax, how components interact, and how state management works. Balancing this with my computer science coursework made it challenging to learn React from scratch while completing the project within the given timeframe. From the start, I knew I needed at least two components: ReviewList.js and ReviewItem.js to structure the project properly. The ReviewItem.js component is responsible for displaying key details like the MPAA rating, display title, and publication date for each review. To visualize how this would work, I sketched out my ideas on paper before implementing them. I also added check marks and X marks to indicate whether a movie was a Critics Pick, as I thought it would make the UI more informative. AI assisted me with structuring this component, but it wasn’t too difficult to understand. However, the ReviewList.js component was much more challenging, and I relied on AI much more for this part. Since I wasn’t familiar with useState, AI helped guide me in setting up the search bar and implementing the "Load More" functionality to display 10 additional movies at a time. Overall, I found this project very interesting because it made me think about how search bars and filters work behind the scenes which is something I had never really considered before. Even though I leaned heavily on AI, I learned new things in React and I believe I would have gained a deeper understanding if I had more time to learn React without the added pressure of my other coursework.
+  
+- AI Usage: Since I am new to React, I used AI to guide me in structuring reusable components, implementing useState for state management and writing efficient filtering logic. I reviewed all AI-generated suggestions to ensure they met the project requirements and I adapted the code to make it simpler and easier to understand, reflecting my own perspective. However I did not have the time to complete all project requirements.
+  
+- What I learned and I could've done better: I learned how to use props to pass data from parent to child components for the ReviewItem component, managing component state with useState. I also learned modularizing code into smaller, reusable components. I want to implement more css to make the website look better but I encountered errors and didn't have time for the implementation.
 
-
-Overview: 
-
-For this scenario, you have been asked to write an application which will provide information about movie critic reviews. Approach this problem as if the application will go to production. We don't expect it to be perfect (no production code is) but it should also not be a hacked together script. Spend whatever time you think is reasonable but no more than 20 hours. Do the best that you can, with the time you have available.
-
-While the end result may not be your best work, it should represent you and your abilities as a developer.
-
-You can use whatever 3rd party libraries you feel are appropriate but the framework used must be React and attempt to follow React best practices. We've got things started for you with a boilerplate and some examples.
-
-Note: Please use functional components (instead of class components).
-
-Requirements:
-
-The following features should be within the site:
-
-A reviews list should be displayed by publication date with the most recent first and only display the image, title, date of publication, MPAA Rating and Critics pick. We'd like the amount of reviews displayed to be variable with a default of 20 upon loading the page. The user may increase this but no more than 50 at a time.
-Users should be able to search by title and filter by:
-MPAA Rating
-Publication date
-Critic's pick
-The search functionality should apply the filter as the user types
-Clicking a review should display: 
-Title
-image
-MPAA Rating
-if it's a critic's pic
-headline 
-summary of the review 
-the critic's name (re: byline) 
-link to the article
-Users search and/or filters should not be lost after viewing a review
-A critics page with the number of reviews each critic has written and how many are critics pick. Please display the critic's image and bio if they are available in the list.
-
-Data  
-
-The data is available in static/movie-reviews.json and static/critics.json.
-
-
-Setup:
-
-We recommend using nvm for node version management. The project is set up with webpack and express for the development environment. We used node lts/dubnium (v10.22.1).
-
-Once you have nvm (or the correct version of node) all you should need to run is below.
-
-
-1. If using nvm, otherwise skip to 2
-first time:
-nvm install lts/dubnium
- 
-every other time:
-nvm use lts/dubnium
- 
-2. npm i
-3. npm start
- 
-The project should be running on localhost:8000. Show us what you got!
-
-
-
-Please note: We are looking for you to demonstrate your knowledge related to common software practices to include reusability, portability, and encapsulation – to name a few. Interface should also be quite responsive with little or no wait times. Work submitted should be in project form and implemented as you were implementing any production solution.
->>>>>>> 61e58fb (initial commit)
 
