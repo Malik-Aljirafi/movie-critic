@@ -19,10 +19,9 @@ function ReviewList() {
     return matchesSearch && matchesMpaa && matchesCriticsPick;
   });
 
-  // ✅ Show only up to `displayCount` reviews, but never exceed 50
+  
   const visibleReviews = filteredReviews.slice(0, Math.min(displayCount, 50));
 
-  // ✅ Function to load 10 more reviews, but stop at 50
   const loadMore = () => {
     setDisplayCount((prevCount) => Math.min(prevCount + 10, 50));
   };
@@ -51,12 +50,12 @@ function ReviewList() {
         </label>
       </div>
 
-      {/* ✅ Render only the visible reviews */}
+      
       {visibleReviews.map((review) => (
         <ReviewItem key={review.id} review={review} />
       ))}
 
-      {/* ✅ Show "Load More" button only if there are more reviews and displayCount < 50 */}
+  
       {displayCount < 50 && displayCount < filteredReviews.length && (
         <button onClick={loadMore}>Load More</button>
       )}
